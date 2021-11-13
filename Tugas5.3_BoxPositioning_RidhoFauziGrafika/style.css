@@ -1,0 +1,46 @@
+.box1 fieldset{
+    width: 160px;
+    height: 30px;
+    background-color: yellow;
+    float: left;
+}
+
+.box2 fieldset{
+    width: 80%;
+    height: 30px;
+    background-color: orange;
+    margin-left: 200px;
+}
+
+.box3 fieldset{
+    width: 160px;
+    height: 480px;
+    background-color: green;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.box4 fieldset{
+    width: 160px;
+    height: 480px;
+    background-color: skyblue;
+    margin-top: 10px;
+    float: right;
+    margin-right: 39px;
+}
+
+.box5 fieldset{
+    width: 65%;
+    height: 480px;
+    background-color: silver;
+    margin-top: 10px;
+    float: left;
+}
+
+.box6 fieldset{
+    width: 95%;
+    height: 30px;
+    background-color: blue;
+    margin-top: 525px;
+}

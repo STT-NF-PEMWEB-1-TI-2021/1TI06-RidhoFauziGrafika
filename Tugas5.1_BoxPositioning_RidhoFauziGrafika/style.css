@@ -1,0 +1,31 @@
+.box1 fieldset{
+    width: 150px;
+    height: 500px;
+    background-color: yellow;
+    float: left;
+    margin-right: 30px;
+}
+
+.box2 fieldset{
+    width: 150px;
+    height: 500px;
+    background-color: orange;
+    float: left;
+    margin-right: 30px;
+}
+
+.box3 fieldset{
+    width: 150px;
+    height: 500px;
+    background-color: green;
+    float: left;
+    margin-right: 30px;
+}
+
+.box4 fieldset{
+    width: 150px;
+    height: 500px;
+    background-color: skyblue;
+    float: left;
+    margin-right: 30px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Flexbox & Grid</title>
+</head>
+<style>
+    * {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    body {
+        background-color: rgb(250, 126, 126);
+        text-align: center;
+    }
+
+    header {
+        width: 90%;
+        height: 70px;
+        background-color: turquoise;
+        margin: auto;
+    }
+
+    .main {
+        display: flex;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    aside {
+        width: 30%;
+        height: 500px;
+        background-color: turquoise;
+        margin: auto;
+    }
+
+    article {
+        width: 50%;
+        height: 500px;
+        background-color: rgb(238, 46, 46);
+        margin: auto;
+    }
+
+    .image img {
+        width: 15%;
+        margin-right: 60px;
+        margin-left: 40px;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 280px;
+    }
+
+
+    footer {
+        width: 90%;
+        height: 70px;
+        background-color: turquoise;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header>
+        Header
+    </header>
+    <div class="main">
+        <aside>
+            Aside
+        </aside>
+        <article>
+            <p>Article</p>
+            <div class="image">
+                <img src="images/logohtml.png">
+                <img src="images/logocss.png">
+                <img src="images/logojavascript.png">
+            </div>
+        </article>
+    </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+
+</html>

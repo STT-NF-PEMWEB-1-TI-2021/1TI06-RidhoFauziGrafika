@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Flexbox & Grid</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+
+    .box {
+        display: flex;
+    }
+
+    header {
+        width: 80%;
+        height: 80px;
+        background-color: khaki;
+
+    }
+
+    .box1 {
+        width: 20%;
+        background-color: pink;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    nav {
+        width: 20%;
+        height: 500px;
+        background-color: pink;
+    }
+
+    article {
+        width: 60%;
+        height: 500px;
+    }
+
+    aside {
+        width: 20%;
+        height: 500px;
+        background-color: #03DAC5;
+    }
+
+    footer {
+        width: 80%;
+        height: 80px;
+        background-color: khaki;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="box1">Nav</div>
+        <header>
+            <p>Header</p>
+        </header>
+    </div>
+    <div class="main">
+        <nav>
+        </nav>
+        <article>
+            <p>Article</p>
+        </article>
+        <aside>
+            <p>Aside</p>
+        </aside>
+    </div>
+    <div class="box">
+        <div class="box1"></div>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>

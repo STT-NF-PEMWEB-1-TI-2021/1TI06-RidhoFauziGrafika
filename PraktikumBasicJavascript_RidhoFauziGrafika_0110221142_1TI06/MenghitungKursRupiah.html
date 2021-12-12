@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Menghitung Kurs Rupiah</title>
+        <script>
+            function kurs(){
+                let dolar = Number(document.getElementById("dollar").value)
+                let rupiahh = dolar * 14650
+                document.getElementById("rupiah").value = rupiahh
+            }
+        </script>
+    </head>
+    <body>
+        <form id="frm1">
+            <input type="text" id="dollar" value="0" onchange="kurs()">
+            <input type="text" id="rupiah" value="0">
+        </form>
+    </body>
+</html>

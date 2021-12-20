@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Kurs Rupiah</title>
+    </head>
+    <style>
+        fieldset {
+            width: 40%;
+            height: 80px;
+            background-color: rgb(229, 245, 252);
+        }
+
+        table {
+            border: 2px solid;
+        }
+
+        table tr th{
+            border: 2px solid;
+        }
+    </style>
+    <body>
+        <fieldset>
+            <legend>Kurs Rupiah - Mata Uang Asing</legend>
+           <table>
+                <tr>
+                    <th>Masukkan Nilai</th>
+                    <th>Valas</th>
+                    <th>Nilai Rupiah</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nilai" onchange="mataUang()"></td>
+                    <td>
+                        <select id="valas" onchange="mataUang()">
+                            <option value="dollarUSD">Dollar US</option>
+                            <option value="dollarsingapura">Dollar Singapura</option>
+                            <option value="ringgit">Ringgit Malaysia</option>
+                            <option value="yenjepang">Yen Jepang</option>
+                            <option value="euro">Euro</option>
+                            <option value="riyal">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td><input type="text" id="rupiah" onchange="mataUang()"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+        <script>
+            function mataUang(){
+                let kurs = Number(document.getElementById("nilai").value);
+                let matauang = document.getElementById("valas").value;
+
+                if(matauang === "dollarUSD"){
+                    document.getElementById("rupiah").value = kurs * 9915;
+                }
+                
+                else if(matauang === "dollarsingapura"){
+                    document.getElementById("rupiah").value = kurs * 13472;
+                }
+                
+                else if(matauang === "ringgit"){
+                    document.getElementById("rupiah").value = kurs * 874;
+                }
+                
+                else if(matauang === "yenjepang"){
+                    document.getElementById("rupiah").value = kurs * 120;
+                }
+                
+                else if(matauang === "euro"){
+                    document.getElementById("rupiah").value = kurs * 15888;
+                }
+                
+                else if(matauang === "riyal"){
+                    document.getElementById("rupiah").value = kurs * 3592;
+                }
+            }
+        </script>
+    </body>
+</html>

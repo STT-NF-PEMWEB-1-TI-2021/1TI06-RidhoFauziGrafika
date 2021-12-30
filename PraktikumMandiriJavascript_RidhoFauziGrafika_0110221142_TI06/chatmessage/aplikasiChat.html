@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Aplikasi Chat</title>
+    </head>
+    <body>
+        <style>
+            #kotakpesan {
+                border: 2px solid;
+                width: 50%;
+                height: 360px;
+                margin-left: 630px;
+                margin-top: 200px;
+            }
+
+            #tekschat{
+                width: 577px;
+                margin-left: 630px;
+            }
+
+        </style>
+        <div id="kotakpesan"></div>
+        <div>
+            <input type="text" id="tekschat" placeholder="kirim pesan">
+            <button id="tombol">kirim</button>
+        </div>
+        <script>
+            let kotakpesan = document.getElementById("kotakpesan");
+            const tekschat = document.getElementById("tekschat");
+            const tombol = document.getElementById("tombol");
+
+            tombol.addEventListener("click", function(){
+                kotakpesan.innerHTML = kotakpesan.innerHTML + "<br>" + tekschat.value;
+                tekschat.value = "";
+            });
+        </script>
+    </body>
+</html>
